@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<style>body{margin:0;height:100%;background:#1f2933;font-family:'Segoe UI',Arial,sans-serif;color:#e8e1d3}
+.profil{padding:34px 28px 26px;border-bottom:1px solid #374151;text-align:center}
+.foto{width:84px;height:84px;margin:0 auto 14px;border-radius:50%;background:#c2410c;color:#fff;font-family:Georgia,serif;font-size:32px;display:flex;align-items:center;justify-content:center;letter-spacing:2px}
+.profil b{display:block;font-size:17px}.profil small{color:#9ca3af;font-size:13px}
+nav{padding:18px 0}
+a{display:block;color:#cfc8b8;text-decoration:none;padding:12px 32px;font-size:15px;border-left:4px solid transparent}
+a:hover{background:#2b3744;color:#fff}
+a.aktif{background:#2b3744;color:#fff;border-left-color:#c2410c}</style></head>
+<body>
+<div class="profil"><div class="foto">RA</div><b>Reihan Akmal</b><small>Mahasiswa Teknik Informatika</small></div>
+<nav>
+<a href="beranda.html" target="isi" class="aktif">Beranda</a>
+<a href="tentang.html" target="isi">Tentang Saya</a>
+<a href="proyek.html" target="isi">Proyek</a>
+<a href="pengalaman.html" target="isi">Pengalaman</a>
+<a href="kontak.html" target="isi">Kontak</a>
+</nav>
+<script>
+var m=document.querySelectorAll('nav a');
+m.forEach(function(a){a.addEventListener('click',function(){m.forEach(function(x){x.classList.remove('aktif')});a.classList.add('aktif')})});
+</script>
+</body></html>
